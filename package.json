@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "keywords": [],
   "author": "",
@@ -13,12 +15,14 @@
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
+    "agents": "^0.0.95",
     "zod": "^3.25.51"
   },
   "devDependencies": {
     "@types/node": "^22.15.29",
     "prettier": "3.5.3",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.1"
+    "vitest": "^3.2.1",
+    "wrangler": "^4.19.1"
   }
 }
